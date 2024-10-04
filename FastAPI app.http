@@ -1,0 +1,54 @@
+# FastAPI app
+
+###
+# @name Posts
+GET http://127.0.0.1:8000/get_posts/3
+
+###
+# @name Delete user
+DELETE http://127.0.0.1:8000/users/3
+
+###
+# @name update post
+PUT http://127.0.0.1:8000/posts/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6Im5ld0BnbWFpbCIsImV4cCI6MTcyMzQ3MDM3MX0.fTzxaFyibsCnTRiYKpKoEUZEQBiH7BB68opk-TiE3vk
+
+{
+  "title": "first post",
+  "content": "for fun2"
+}
+
+###
+# @name new posts
+POST http://127.0.0.1:8000/posts/2
+Content-Type: application/json
+
+{
+  "title": "My First Post",
+  "contents": "This is the content of my first post."
+}
+
+
+###
+# @name New user
+POST http://127.0.0.1:8000/users/new_user
+Content-Type: application/json
+
+{
+  "password": "strong2_password",
+  "username": "new sahu",
+  "email": "new@gmail"
+}
+
+
+###
+# @name Delete post
+DELETE http://127.0.0.1:8000/users/3
+
+###
+# @name Auth
+POST http://127.0.0.1:8000/auth/login
+Content-Type: application/x-www-form-urlencoded
+
+username=new@gmail&password=strong_password

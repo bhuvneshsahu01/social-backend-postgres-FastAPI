@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "067e5720-7179-4c38-bfc9-605e4c87db76",
+		"name": "FastAPI app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37282581"
+	},
+	"item": [
+		{
+			"name": "Posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/get_posts/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000 "
+			},
+			"response": []
+		},
+		{
+			"name": "update post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"first post\",\r\n  \"contents\":\"for fun\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/update_posts/3"
+			},
+			"response": []
+		},
+		{
+			"name": "new posts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"My First Post\",\r\n  \"contents\": \"This is the content of my first post.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/posts/2"
+			},
+			"response": []
+		},
+		{
+			"name": "New user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"password\": \"password1\",\r\n  \"username\": \"vikas sahu\",\r\n  \"email\": \"bhuvi@gmail\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/users/new_user"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/users/3"
+			},
+			"response": []
+		}
+	]
+}
